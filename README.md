@@ -1,43 +1,337 @@
-<h1> <img src="https://raw.githubusercontent.com/shsarv/Cardio-Monitor/main/static/heartlogo.png" width="50px" /> Cardio-Monitor</h1>
+# ❤️ CardioSense: Early Heart Disease Detection using Machine Learning
 
-**Ongoing Project**
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![KNN](https://img.shields.io/badge/Model-KNN-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Cardio Monotor is a web app that helps you to find out whether you are at a risk of developing a heart disease. **the model used for prediction has the accuracy of 92%.**
+A full-stack Machine Learning web application for early heart disease risk prediction. The platform combines healthcare analytics, machine learning, data visualization, and patient record management to provide an intelligent decision-support system for cardiovascular disease screening.
 
-This is the course project of subject Big Data Analytics (BCSE0158). THe Core Project is available... [here](https://github.com/shsarv/Heart-Disease-Prediction). 
+---
 
-<h3> <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/49314d89b6a54b2750a130e2b56d5da310aa6552/icons/abstract.svg" width="30px" /> Abstract -  </h3> 
-Over the last few decades, heart disease is the most common cause of global death. So early detection of heart disease and continuous monitoring can reduce the mortality rate. The exponential growth of data from different sources such as wearable sensor devices used in Internet of Things health monitoring, streaming system and others have been generating an enormous amount of data on a continuous basis. The combination of streaming big data analytics and machine learning is a breakthrough technology that can have a significant impact in healthcare field especially early detection of heart disease. This technology can be more powerful and less expensive. To overcome this issue,realtime heart disease prediction system based on apache Spark/ real time input data which stand as a strong large scale distributed computing platform that can be used successfully for streaming data event against machine learning through in-memory computations. 
+# 📌 Project Highlights
 
-<h3> <img src="https://st.depositphotos.com/1008768/4671/i/950/depositphotos_46719249-stock-photo-demo-icon.jpg" width="30px" /> Demo </h3> 
-will be attatched soon.
+✔ Heart Disease Prediction using Machine Learning
 
-![]()
+✔ Interactive Flask Web Application
 
-<h3> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flow_logo.svg/846px-Flow_logo.svg.png" width="30px" /> general working of this web application.</h3> 
+✔ MongoDB Database Integration
 
-![](https://raw.githubusercontent.com/shsarv/Cardio-Monitor/main/Input%20Data.png)
+✔ Exploratory Data Analysis (EDA)
 
+✔ Patient Data Management (CRUD Operations)
 
-<h3>Technology Used. </h3> 
-<code><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="120px" /></code>
-<code><img src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png" width="120px" /></code>
-<code><img src="https://raw.githubusercontent.com/rasbt/mlxtend/master/docs/sources/img/logo.png" width="120px" /></code>
-<br>
-<br>
+✔ Real-Time Prediction Dashboard
 
-<h3>Future Technology to be Used. </h3> 
-<code><img src="https://miro.medium.com/max/1838/1*qgkjkj6BLVS1uD4mw_sTEg.png" width="120px" /></code>
-<code><img src="https://bigdatapath.files.wordpress.com/2019/04/1-4.jpg?w=698" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" width="120px" /></code>
-<code><img src="https://www.vectorlogo.zone/logos/deepl/deepl-ar21.svg" width="120px" /></code>
-<br>
-<br>
+✔ Feature Visualization & Comparison Charts
 
+✔ Model Persistence using Joblib
 
-<h3>License</h3> 
-<img src="https://www.vectorlogo.zone/logos/mitedu/mitedu-ar21.svg" width="100px" />
+✔ Production-Ready Project Structure
 
- **Created By - Sarvesh Kumar Sharma**
+✔ Research-Oriented Healthcare Analytics
+
+---
+
+# 🏥 Problem Statement
+
+Cardiovascular diseases remain one of the leading causes of death worldwide. Early diagnosis can significantly improve treatment outcomes and reduce mortality rates.
+
+This project leverages machine learning techniques to analyze clinical attributes and predict the likelihood of heart disease at an early stage. The system assists healthcare professionals and researchers by providing fast and data-driven risk assessments.
+
+---
+
+# 🎯 Objectives
+
+- Predict heart disease risk using clinical parameters
+- Provide an intuitive web interface for diagnosis
+- Store patient records securely in MongoDB
+- Visualize health indicators for better interpretation
+- Support healthcare research through data analytics
+
+---
+
+# 📂 Repository Structure
+
+```text
+CardioSense/
+│
+├── app.py
+├── database.py
+├── prediction.py
+├── modelbuild.py
+├── visualization.py
+├── requirements.txt
+│
+├── templates/
+│   ├── disease.html
+│
+├── notebooks/
+│   ├── Early Detection of Heart Disease Using Big Data Approach.ipynb
+│   ├── Heart Disease Detection Using Big Data Approach.ipynb
+│   └── Heart_Disease_Prediction.ipynb
+│
+├── reports/
+│   ├── EDA_heart_Disease.html
+│   └── EDA_heart_Disease.pdf
+│
+├── models/
+│   └── heartmodel.pkl
+│
+└── README.md
+```
+
+---
+
+# 📊 Dataset Information
+
+### Dataset Summary
+
+| Attribute | Value |
+|------------|--------|
+| Records | 303 |
+| Features | 13 |
+| Missing Values | 0 |
+| Duplicate Records | 1 |
+| Target Variable | Heart Disease Presence |
+
+### Clinical Features
+
+| Feature | Description |
+|----------|-------------|
+| age | Patient Age |
+| sex | Gender |
+| cp | Chest Pain Type |
+| trestbps | Resting Blood Pressure |
+| chol | Cholesterol |
+| fbs | Fasting Blood Sugar |
+| restecg | Resting ECG Results |
+| thalach | Maximum Heart Rate |
+| exang | Exercise-Induced Angina |
+| oldpeak | ST Depression |
+| slope | ST Segment Slope |
+| ca | Major Vessels Count |
+| thal | Thalassemia Status |
+
+---
+
+# 🔍 Exploratory Data Analysis
+
+The project includes detailed EDA reports generated using Pandas Profiling.
+
+### Dataset Statistics
+
+- Total Records: 303
+- Total Features: 14
+- Missing Values: 0%
+- Duplicate Records: 0.3%
+- Average Age: 54.36 years
+- Average Cholesterol: 246.26 mg/dL
+
+The EDA report explores:
+
+- Feature distributions
+- Correlation analysis
+- Outlier detection
+- Missing value analysis
+- Target distribution
+- Clinical feature relationships
+
+---
+
+# 🤖 Machine Learning Pipeline
+
+## Data Preprocessing
+
+- Feature Encoding
+- Duplicate Removal
+- Normalization using MinMaxScaler
+- Train-Test Split (80/20)
+
+## Model Training
+
+The system uses:
+
+### K-Nearest Neighbors (KNN)
+
+```python
+KNeighborsClassifier(n_neighbors=7)
+```
+
+Workflow:
+
+1. Data Collection
+2. Data Cleaning
+3. Feature Scaling
+4. Model Training
+5. Evaluation
+6. Model Persistence
+7. Deployment
+
+---
+
+# ⚙️ Technology Stack
+
+## Backend
+
+- Flask
+- Python
+
+## Machine Learning
+
+- Scikit-Learn
+- NumPy
+- Pandas
+- Joblib
+
+## Database
+
+- MongoDB
+
+## Visualization
+
+- Matplotlib
+- Seaborn
+
+## Deployment
+
+- Gunicorn
+
+---
+
+# 📈 Application Features
+
+### Prediction Module
+
+- Heart disease risk prediction
+- Clinical feature processing
+- Real-time inference
+
+### Database Module
+
+- Store patient records
+- Update records
+- Delete records
+- Retrieve patient history
+
+### Analytics Module
+
+- Health comparison charts
+- Patient vs normal benchmark analysis
+- Data visualization dashboard
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/CardioSense.git
+
+cd CardioSense
+```
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate:
+
+```bash
+source venv/bin/activate
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+DATABASE_LINK=your_mongodb_connection_string
+```
+
+## Run Application
+
+```bash
+python app.py
+```
+
+Application will start at:
+
+```text
+http://localhost:5000
+```
+
+---
+
+# 📷 Screenshots
+
+Add screenshots here:
+
+- Home Page
+- Prediction Form
+- Prediction Results
+- Analytics Dashboard
+- EDA Visualizations
+
+---
+
+# 📚 Research Foundation
+
+This project was developed as part of a Big Data Analytics academic project focusing on early cardiovascular disease detection through machine learning and healthcare analytics.
+
+The implementation combines:
+
+- Machine Learning
+- Healthcare Data Mining
+- Predictive Analytics
+- Clinical Decision Support Systems
+
+---
+
+# 🔮 Future Improvements
+
+- Deep Learning Models
+- XGBoost Integration
+- SHAP Explainability
+- Patient Authentication
+- Cloud Deployment
+- REST API Support
+- Real-Time IoT Health Monitoring
+- Docker Support
+
+---
+
+# 👨‍💻 Author
+
+**Rishabh Saurabh**
+
+B.Tech CSE (AI & ML)
+
+Sharda University
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you found this project useful, consider starring the repository.
